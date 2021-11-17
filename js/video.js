@@ -1,6 +1,7 @@
 var video = document.querySelector("#player1");
 var buttonText = document.querySelector("#mute");
 var slider = document.querySelector("#slider");
+var volume = document.querySelector("#volume"); 
 
 window.addEventListener("load", function() {
 	console.log("Good job opening the window")
@@ -8,9 +9,13 @@ window.addEventListener("load", function() {
 });
 
 document.querySelector("#play").addEventListener("click", function() {
-console.log("Play Video");
-video.play()
-console.log(video.currentTime)
+	console.log("Play Video");
+	video.play()
+	console.log(video.currentTime)
+
+	video.volume = document.querySelector("#volume").innerHTML = (video.volume*100) + "%";
+
+
  });
 
 document.querySelector("#pause").addEventListener("click", function() {
