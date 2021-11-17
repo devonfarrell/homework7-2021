@@ -37,7 +37,7 @@ document.querySelector("#skip").addEventListener("click", function(){
 		video.load()
 	}else{
 		video.currentTime +=15;
-		console.log("New time is" + video.currentTime)
+		console.log("New time is " + video.currentTime)
 	}
 });
 
